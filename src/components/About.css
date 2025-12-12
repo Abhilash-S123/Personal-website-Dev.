@@ -1,0 +1,66 @@
+.about-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.about-img-container {
+    position: relative;
+    width: 180px;
+    /* Reduced size */
+    height: 180px;
+    /* Force square ratio for round shape */
+    border-radius: 50%;
+    /* Round shape */
+    overflow: hidden;
+    border: 3px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    margin: 0 auto;
+    /* Center if needed */
+}
+
+.about-profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure image covers the circle */
+    display: block;
+    transform: scale(1.1);
+    /* Slight zoom by default */
+    transition: transform 0.3s ease;
+}
+
+.about-profile-img:hover {
+    transform: scale(1.2);
+}
+
+.body-text {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--glass-border);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin-bottom: 0.2rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}

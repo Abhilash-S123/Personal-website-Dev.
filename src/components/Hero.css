@@ -1,0 +1,165 @@
+.hero {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding-top: 120px;
+    /* Account for fixed navbar */
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--accent-primary);
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Visuals */
+.hero-visual {
+    position: relative;
+}
+
+.glow-circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: var(--gradient-glow);
+    filter: blur(80px);
+    border-radius: 50%;
+    opacity: 0.2;
+    z-index: 1;
+    animation: pulse 10s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8) rotate(0deg);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: scale(1.1) rotate(180deg);
+        opacity: 0.3;
+    }
+}
+
+.code-card {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(15, 15, 20, 0.8);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--glass-shadow);
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+}
+
+.code-card:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.card-header {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot.red {
+    background-color: #ef4444;
+}
+
+.dot.yellow {
+    background-color: #f59e0b;
+}
+
+.dot.green {
+    background-color: #10b981;
+}
+
+.card-body {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.code-line {
+    display: block;
+    color: #e5e7eb;
+}
+
+.indent {
+    padding-left: 1.5rem;
+}
+
+/* Syntax Highlighting */
+.keyword {
+    color: #c084fc;
+}
+
+/* purple */
+.variable {
+    color: #60a5fa;
+}
+
+/* blue */
+.string {
+    color: #4ade80;
+}
+
+/* green */
+.boolean {
+    color: #f472b6;
+}
+
+/* pink */
+.bracket {
+    color: #fbbf24;
+}
+
+/* yellow */
+
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .hero-btns {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        margin-top: 3rem;
+    }
+
+    .code-card {
+        max-width: 320px;
+    }
+}
