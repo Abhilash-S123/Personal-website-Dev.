@@ -34,7 +34,7 @@ My official personal portfolio website showcasing my journey as a self-taught Fu
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/Abhilash-S123/Personal-website-Dev.git
+git clone https://github.com/Abhilash-S123/Personal-website-Dev..git
 cd Personal-website-Dev.
 ```
 
