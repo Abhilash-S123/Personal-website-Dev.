@@ -79,7 +79,7 @@
     transform: rotate(0deg) scale(1.02);
 }
 
-.card-header {
+.code-header {
     display: flex;
     gap: 8px;
     margin-bottom: 1.5rem;
@@ -145,7 +145,7 @@
 
 /* yellow */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hero {
         text-align: center;
         padding-top: 100px;
@@ -153,13 +153,56 @@
 
     .hero-btns {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .hero-visual {
         margin-top: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 1rem;
     }
 
     .code-card {
-        max-width: 320px;
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+        padding: 1rem;
+        transform: none !important;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .code-card:hover {
+        transform: none !important;
+    }
+
+    .code-header {
+        margin-bottom: 1rem;
+    }
+
+    .code-content {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        max-width: 100%;
+    }
+
+    .code-content pre {
+        margin: 0;
+        font-size: 0.7rem;
+        line-height: 1.4;
+        white-space: pre;
+        overflow-x: auto;
+    }
+
+    .code-content code {
+        font-size: 0.7rem;
+        display: block;
+    }
+
+    /* Disable glow animation on mobile */
+    .glow-circle {
+        display: none;
     }
 }
