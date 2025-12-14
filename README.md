@@ -8,7 +8,7 @@ My official personal portfolio website showcasing my journey as a self-taught Fu
 
 ## 📸 Preview
 
-![Portfolio Preview](https://github.com/Abhilash-S123/Personal-website-Dev./blob/master/image_2025-12-13_184230407.png?raw=true)
+![Portfolio Preview](https://github.com/Abhilash-S123/Personal-website-Dev./blob/dev/image_2025-12-13_184230407.png?raw=true)
 
 ## ✨ Features
 
