@@ -23,7 +23,7 @@ const Projects = () => {
                     <p className="project-tip note"><em>Tip: Use different browsers/devices and create two accounts to test real-time features.</em></p>
                 </>
             ),
-            tags: ['Amazon Web Services (AWS)', 'Git', 'Socket.IO', 'REST APIs', 'MERN', 'JWT', 'Bcrypt', 'Cloudinary', 'mongoose', 'Tailwind'],
+            tags: ['Amazon Web Services (AWS)', 'Git', 'Socket.IO', 'REST APIs', 'MERN', 'JWT', 'Bcrypt', 'Cloudinary', 'mongoose', 'Tailwind CSS'],
             link: 'https://chat-application-avpq.vercel.app',
             github: 'https://github.com/Abhilash-S123/Chat-Application'
         },
