@@ -25,7 +25,13 @@ const About = () => {
                             I bring dedication and attention to detail to every project.
                         </p>
                         <p className='body-text'>
-                            My education qualifications are plus two and a diploma ( non-it )
+                            My education qualifications are plus two (78%) and a diploma (93 %)
+                        </p>
+                        <p className='body-text'>
+                            I have 7 months of experience in Full Stack Development
+                        </p>
+                        <p className='body-text'>
+                            I am a self-taught developer and I am always looking for new challenges and opportunities to learn and grow.
                         </p>
                     </div>
                 </div>
